@@ -22,7 +22,9 @@ const BasicLayout = ({ route, children }) => {
 
   useEffect(() => {
     const {works} = globalStore
-    if(works.length > 0) {
+    const user = sessionStorage.getItem('user')
+    const id = JSON.parse(user).roleId
+    if(works.length > 0 && id !=1) {
       const items = works.filter(work => work.unFinish > 0).map(work => <div>{work.department},<span style={{color:'red', fontSize:16}}>{work.unFinish}</span>项任务未完成</div>)
       notification['warning']({
         key: 'workUnFinish',

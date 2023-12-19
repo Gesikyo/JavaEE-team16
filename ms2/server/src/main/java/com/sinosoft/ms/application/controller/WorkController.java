@@ -70,7 +70,7 @@ public class WorkController {
         String roleId=SecurityHelper.getRole();
         LocalDate now = LocalDate.now();
         // 未到当前月的最后10天则不提醒
-        if(now.getMonth().maxLength() - now.getDayOfMonth() > 20 || "1".equals(roleId)) {
+        if(now.getMonth().maxLength() - now.getDayOfMonth() > 10 || "1".equals(roleId)) {
             return ResponseData.success(Arrays.asList());
         }
         return countByDept(now.getYear(), now.getMonthValue());

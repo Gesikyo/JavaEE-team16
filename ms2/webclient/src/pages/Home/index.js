@@ -85,7 +85,7 @@ const home = () => {
 
         {/* 时间提示功能 */}
         <div className="riqi" align="center">
-          {dayjs(pageStore.searchDate).format('YYYY年MM月')}的数据如下:
+          {dayjs(pageStore.searchDate).format('YYYY年MM月')}的数据如下
         </div>
 
       <div id="workChat" style={{height:chatHeight, marginTop:20}} />
