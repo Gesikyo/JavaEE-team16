@@ -93,7 +93,7 @@ const home = () => {
       {/* 版本号 */}
       <div class="xuanfukuang" align="right">
         <div class="version-info">
-          <p>Made by 你说的都队 版本号：2.0</p>
+          <p>Made by 你说的都队 版本号：3.0</p>
         </div>
       </div>
 

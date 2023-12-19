@@ -41,6 +41,7 @@ const MainHeader = () => {
             {/* <Link to="/">
               <div className="logo" />
             </Link> */}
+            <div className="logo" />
             <div className="title">{globalStore.appTitle}</div>
           </div>
         </Col>

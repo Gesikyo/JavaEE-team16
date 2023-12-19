@@ -74,6 +74,13 @@ const LoginPage = () => {
           </Button> 
         </Form.Item>
       </Form>
+
+      <footer className="halloween-footer">
+      <h2>你说的都队</h2>
+        <p>开发时间：2023年12月19日</p>
+        <p>版本号：3.0</p>
+      </footer>
+
     </div>
   );
 };
