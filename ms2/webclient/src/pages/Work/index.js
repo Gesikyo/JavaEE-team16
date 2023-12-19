@@ -217,14 +217,14 @@ const work = () => {
         title: '项目类别',
         dataIndex: 'worktype',
         align: 'center',
-        render: (text) => text == 1 ? <Tag color="blue">常规工作</Tag> : (text == 2 ? <Tag color="green">重点工作</Tag> : <Tag color="red">创新工作</Tag>),
+        render: (text) => text == 1 ? <Tag color="blue">常规工作</Tag> : (text == 2 ? <Tag color="green">重点工作</Tag> : (text == 3 ? <Tag color="red">创新工作</Tag> : <Tag color="orange">新增工作</Tag>)),
         sorter: true
 
       },
       {
         title: '事务',
         dataIndex: 'workcontent',
-        render: (text, record) => <div color='red'>{text}{record.new&&<Icon component={NewSvg} />}</div>,
+        render: (text, record) => <div>{text}{record.new&&<Icon component={NewSvg} />}</div>,
       },
       {
         title: '状态',

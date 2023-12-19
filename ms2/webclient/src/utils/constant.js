@@ -15,5 +15,5 @@ export default {
   sexToString: (sex) => sex == 1 ? "男" : sex == 0 ? "女" : "-",
   statusToString: (text) => text == 1 ? <Tag color="blue">进行中</Tag> : (text == 2 ? <Tag color="green">已完成</Tag> : text == 3 ? <Tag color="red">未完成</Tag> : <Tag color="gray">无</Tag>),
   deptTypeToString: (text) => text == 1 ? "学院" : text == 2 ? "管理部门" : "-",
-  wokTypeToTag:(text) => text == 1 ? <Tag color='blue'>常规工作</Tag> : text == 2 ? <Tag color="green">重点工作</Tag> : (text == 3 ? <Tag color="red">创新工作</Tag> : <Tag color="orange">新增工作</Tag>)
+  workTypeToTag:(text) => text == 1 ? <Tag color="blue">常规工作</Tag> : (text == 2 ? <Tag color="green">重点工作</Tag> : (text == 3 ? <Tag color="red">创新工作</Tag> : <Tag color="orange">新增工作</Tag>))
 }
